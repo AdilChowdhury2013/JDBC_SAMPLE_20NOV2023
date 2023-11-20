@@ -1,0 +1,144 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2186685600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the codefios login page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_is_on_Codefios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-20T19:28:28.599Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3208922800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Other Scenario- user should be able to login with valid credentials",
+        "description": "",
+        "id": "codefios-login-page-functionality-validation;other-scenario--user-should-be-able-to-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 330109000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1606702000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters the \"username\" from mySQL database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_Codefios_Signin_details_from_mySQL_database(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1332437600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters the \"password\" from mySQL database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_Codefios_Signin_details_from_mySQL_database(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 70810400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on the signin button",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_clicks_on_the_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should land on Codefios dashboard page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DbloginFeature"
+          },
+          {
+            "name": "@DbScenario1"
+          }
+        ]
+      }
+    ],
+    "name": "Codefios login page functionality validation",
+    "description": "",
+    "id": "codefios-login-page-functionality-validation",
+    "keyword": "Feature",
+    "uri": "classpath:feature_folder/LoginWithDataFromMySQLDB.feature",
+    "tags": [
+      {
+        "name": "@DbloginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
