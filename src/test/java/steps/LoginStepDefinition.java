@@ -37,17 +37,6 @@ public class LoginStepDefinition extends TestBase {
 	@When("User enters the {string} from mySQL database")
 	public void user_enters_Codefios_Signin_details_from_mySQL_database(String loginData) {
 		
-//		switch (LoginData) {
-//
-//		case "username":
-//			loginPage.enterUserName(LoginData);
-//			break;
-//
-//		case "password":
-//			loginPage.enterPassword(LoginData);
-//
-//		}
-		
        if (loginData.equalsIgnoreCase("username")) {
 
 			databasePage.getDataFromDb("username");
